@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit Project</title>
+    <title>Project Explorer App</title>
 </head>
 <body>
     <!-- Heading Section -->
@@ -13,43 +13,33 @@
 </header>
     <!-- Navigation section -->
 <nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="search.html">Projects</a></li>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="register.html">Register</a></li>
-        <li><a href="createproject.html">Submit </a></li>
-    </ul>
+        <a href="index.html">Home</a>
+        <a href="search.html">Projects</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
 </nav>
 <main>
-    <section>
-        <h1>Project 1</h1>
-        <ul>
-            <li>Created By: Dauda Lawal</li>
-            <li>Date Created: 4/02/2021</li>
-            <li>Last Updated: 07/02/2020</li>
-        </ul>
-    </section>
-    <section>
-        <h2>Edit Project</h2>
-        <form action="" name="editProject">
-            <label for="Project Name">Project Name: <br></label>
-            <input type="text" name="name">
-             <br> <br>
-    
-             <label for="Project Name">Project Abstract: <br><textarea name="abstract" id="" cols="18" rows="2"></textarea></label><br> <br>
-    
-            <label for="Authors">Authors: <br> </label>
-            <input type="text" name="authors"> <br> <br>
-    
-            <label for="Authors">Tag(s): <br></label>
-            <input type="text" name="tags"> <br> <br>
-
-            <label for="Authors">Upload File <br></label>
-            <input type="file" name="projectFile">
-    
-            <input type="submit">
-    </section>
+    <h1>Project 1</h1>
+    <ul>
+        <li id="createdBy">Created by : Dauda Lawal</li>
+        <li id="createDate">Date Created: 00/00/0000</li>
+        <li id="lastUpdateDate">Last Updated: 01/01/2001</li>
+    </ul>
+    <br />
+    <h2>Edit Project</h2>
+        <form name="editProject">
+            <label for="name">Project Name:</label><br />
+            <input type="text" name="name" /><br /><br />
+            <label for="abstract">Project Abstract:</label><br />
+            <textarea name="abstract"></textarea><br /><br />
+            <label for="authors">Authors:</label><br />
+            <input type="text" name="authors" /><br /><br />
+            <label for="tags">Tag(s):</label><br />
+            <input type="text" name="tags" /><br /><br />
+            <label for="projectFile">Upload File</label><br />
+            <input type="file" name="projectFile" /><br /><br />
+            <input type="submit" />
+          </form> 
 </main>
 
 </body>
