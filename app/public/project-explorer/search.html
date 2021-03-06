@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Explorer App</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body class="pt-5" >
+    <!-- Heading Section -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
+      <h1><a class="navbar-brand" href="#">Project Explorer</a></h1>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search Projects" aria-label="Search">
+        <button class="btn btn-outline-light" type="submit">Search</button>
+      </form>
+      <a class="navbar-brand" href="createproject.html">Submit</a>
+  
+        <!-- Navigation section -->
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="search.html">Projects</a>
+                  </li>
+                  
+                  <li class="nav-item active">
+                    <a class="nav-link" href="login.html">Login</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="register.html">Register</a>
+              </ul>
+        </div>
+  </nav>
+  <main class="container" style="padding-top: 65px;">
+    <h2>Search Project By</h2>
+    <div class="container bg-light p-3 ">
+      <form name="searchForm" class="form-row">
+          <div class="form-group col-7"> 
+            <input type="text" class="form-control form-control-lg" placeholder="Project Name, Authors, Abstract,Tags"
+            name="searchTerm"/>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="searchType">Search By</label>
+            <select name="searchType" class="form-control form-control-lg">
+                <option value="Name">Name</option>
+                <option value="Abstract">Abstract</option>
+                <option value="Authors">Authors</option>
+                <option value="Tags">Tags</option>
+            </select>
+          </div>  
+          <br /><br />
+          <div class="col-md-1">
+            <button class="btn btn-lg btn-primary col" type="button">Submit</button>
+          </div>  
+      </form>
+    </div>  <br><br>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+              <div class="card">
+                    <div class="card-body text-center">
+                          <h5 class="card-title text-primary">Project Title</h5>
+                          <h6 class="card-subtitle mb-2">Author 1, Author 2</h6>
+                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, provident! Tempore nostrum illum dolores </p>
+                          <a href="#" class="class-link">Click here</a>
+                    </div>
+              </div>
+        </div>
+        <div class="col-md-4">
+              <div class="card">
+                    <div class="card-body text-center">
+                          <h5 class="card-title text-primary">Project Title</h5>
+                          <h6 class="card-subtitle mb-2">Author 1, Author 2</h6>
+                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, provident! Tempore nostrum illum dolores </p>
+                          <a href="#" class="class-link">Click here</a>
+                    </div>
+              </div>
+        </div>
+  </div>
+    </div>
+    </main>
+    
+</body>
+<footer class="float-right">
+  <p> Project Explorer &copy; <strong>Edconnect 2020</strong></p>
+</footer>
+</html>
